@@ -1,7 +1,7 @@
 <template>
-  <header class="main-header">
+  <header id="header">
     <div class="logo">
-      <span class="icon fa-gem"></span>
+      <span class="icon fa-gem" />
     </div>
     <div class="content">
       <div class="inner">
@@ -12,17 +12,25 @@
     <nav>
       <ul>
         <li>
-            <nuxt-link to="#intro">Intro</nuxt-link>
-            </li>
+          <nuxt-link to="#intro">
+            Intro
+          </nuxt-link>
+        </li>
         <li>
-            <nuxt-link to="#work">Work</nuxt-link>
-            </li>
+          <nuxt-link to="#work">
+            Work
+          </nuxt-link>
+        </li>
         <li>
-            <nuxt-link to="#about">About</nuxt-link>
-            </li>
+          <nuxt-link to="#about">
+            About
+          </nuxt-link>
+        </li>
         <li>
-            <nuxt-link to="#contact">Contact</nuxt-link>
-            </li>
+          <nuxt-link to="#contact">
+            Contact
+          </nuxt-link>
+        </li>
       </ul>
     </nav>
   </header>
@@ -33,13 +41,9 @@ export default {
   name: 'AppHeader',
   data () {
     return {
-      info: [
-        {
-          title: 'Dimension',
-          data:
-            'A fully responsive site template designed by HTML5 UP and released for free under the Creative Commons license.'
-        }
-      ]
+      title: 'Dimension',
+      data:
+        'A fully responsive site template designed by HTML5 UP and released for free under the Creative Commons license.'
     }
   }
 }

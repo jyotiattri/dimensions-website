@@ -27,6 +27,12 @@ export default {
     '~/assets/css/main.css',
     '~/assets/css/noscript.css'
   ],
+  script: [
+    { hid: 'jquery', src: '/static/js/jquery.min.js' },
+    { hid: 'browser', src: '/static/js/browser.min.js' },
+    { hid: 'break', src: '/static/js/breakpoints.min.js' },
+    { hid: 'util', src: '/static/js/util.js' }
+  ],
   /*
   ** Plugins to load before mounting the App
   */
@@ -62,31 +68,8 @@ export default {
     */
     extend (config, ctx) {
     }
-  },
-  styleResources: {
-    scss: ['~/assets/sass/main.scss',
-    '~/assets/sass/noscript.scss',
-    '~/assets/sass/base/_page.scss',
-    '~/assets/sass/base/_reset.scss',
-    '~/assets/sass/base/_typography.scss',
-    '~/assets/sass/components/_actions.scss',
-    '~/assets/sass/components/_box.scss',
-    '~/assets/sass/components/_button.scss',
-    '~/assets/sass/components/_form.scss',
-    '~/assets/sass/components/_icon.scss',
-    '~/assets/sass/components/_icons.scss',
-    '~/assets/sass/components/_image.scss',
-    '~/assets/sass/components/_list.scss',
-    '~/assets/sass/components/_table.scss',
-    '~/assets/sass/layout/_bg.scss',
-    '~/assets/sass/layout/_footer.scss',
-    '~/assets/sass/layout/_header.scss',
-    '~/assets/sass/layout/_main.scss',
-    '~/assets/sass/layout/_wrapper.scss',
-    '~/assets/sass/libs/_breakpoints.scss',
-    '~/assets/sass/libs/_functions.scss',
-    '~/assets/sass/libs/_mixins.scss',
-    '~/assets/sass/libs/_vars.scss',
-    '~/assets/sass/libs/_vendor.scss']
   }
+  // styleResources: {
+  //   scss: ['~/assets/sass/main.scss']
+  // }
 }
