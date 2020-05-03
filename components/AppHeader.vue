@@ -11,10 +11,18 @@
     </div>
     <nav>
       <ul>
-        <li><nuxt-link to="#intro">Intro</nuxt-link></li>
-        <li><nuxt-link to="#work">Work</nuxt-link></li>
-        <li><nuxt-link to="#about">About</nuxt-link></li>
-        <li><nuxt-link to="#contact">Contact</nuxt-link></li>
+        <li>
+            <nuxt-link to="#intro">Intro</nuxt-link>
+            </li>
+        <li>
+            <nuxt-link to="#work">Work</nuxt-link>
+            </li>
+        <li>
+            <nuxt-link to="#about">About</nuxt-link>
+            </li>
+        <li>
+            <nuxt-link to="#contact">Contact</nuxt-link>
+            </li>
       </ul>
     </nav>
   </header>
@@ -22,17 +30,17 @@
 
 <script>
 export default {
-  name: "AppHeader",
-  data() {
+  name: 'AppHeader',
+  data () {
     return {
       info: [
         {
-          title: "Dimension",
+          title: 'Dimension',
           data:
-            "A fully responsive site template designed by HTML5 UP and released for free under the Creative Commons license."
+            'A fully responsive site template designed by HTML5 UP and released for free under the Creative Commons license.'
         }
       ]
-    };
+    }
   }
-};
+}
 </script>

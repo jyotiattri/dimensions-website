@@ -1,10 +1,8 @@
 <template>
   <div class="container">
     <div>
-      <AppHeader />
-      
-        
-      </div>
+     <AppHeader />   
+   </div>
     </div>
     <!-- <button @click="open('intro')"> -->
     <!-- <my-component v-if="visible" :pageInfo="currentPage" ></my-component> -->
@@ -18,7 +16,7 @@ export default {
   components: {
     AppHeader
   },
-  data() {
+  data () {
     return {
       currentPage: Object,
       info: [{
@@ -38,11 +36,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum fac
   },
   methods: {
     open(title){
-      let infoObj = this.info.find((item) => item.title === title);
-      this.currentPage = infoObj;
-      this.visible = true;
+      let infoObj = this.info.find((item) => item.title === title)
+      this.currentPage = infoObj
+      this.visible = true
     },
-    close(){
+    close (){
       this.visible = false
     }
   }
